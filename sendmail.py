@@ -7,7 +7,7 @@ import os
 
 
 
-def Send(menu,companyNm,movieNm,Year,Month,Date, filename):
+def send(menu,companyNm,movieNm,Year,Month,Date, filename):
     select=str(input("이메일을 보내시겠습니까? y/n:  "))
     if select=='y' or select=='Y':
         senderAddr = 'kimsoo0826@naver.com'  # 보내는 사람
@@ -41,6 +41,8 @@ def Send(menu,companyNm,movieNm,Year,Month,Date, filename):
         os.remove(filename)
     else:
         select=str(input("다시 입력해주세요:  "))
+
+    print("\n")
 
 
 #kimsoo0826@naver.com
